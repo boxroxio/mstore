@@ -20,16 +20,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'fluxstore-demo');
+define('DB_NAME', $_ENV['db_name']);
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', $_ENV['db_user']);
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', $_ENV['db_password']);
 
 /** MySQL hostname */
-define('DB_HOST', '127.0.0.1');
+define('DB_HOST', $_ENV['db_host']);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
